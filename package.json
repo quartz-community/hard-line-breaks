@@ -76,5 +76,16 @@
   "engines": {
     "node": ">=22",
     "npm": ">=10.9.2"
+  },
+  "quartz": {
+    "name": "hard-line-breaks",
+    "displayName": "Hard Line Breaks",
+    "category": "transformer",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 90,
+    "defaultEnabled": false,
+    "defaultOptions": {}
   }
 }
