@@ -1,4 +1,4 @@
-// node_modules/mdast-util-find-and-replace/node_modules/escape-string-regexp/index.js
+// ../../node_modules/.pnpm/escape-string-regexp@5.0.0/node_modules/escape-string-regexp/index.js
 function escapeStringRegexp(string) {
   if (typeof string !== "string") {
     throw new TypeError("Expected a string");
@@ -6,7 +6,7 @@ function escapeStringRegexp(string) {
   return string.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&").replace(/-/g, "\\x2d");
 }
 
-// node_modules/unist-util-is/lib/index.js
+// ../../node_modules/.pnpm/unist-util-is@6.0.1/node_modules/unist-util-is/lib/index.js
 var convert = (
   // Note: overloads in JSDoc can’t yet use different `@template`s.
   /**
@@ -105,12 +105,12 @@ function looksLikeANode(value) {
   return value !== null && typeof value === "object" && "type" in value;
 }
 
-// node_modules/unist-util-visit-parents/lib/color.node.js
+// ../../node_modules/.pnpm/unist-util-visit-parents@6.0.2/node_modules/unist-util-visit-parents/lib/color.node.js
 function color(d) {
   return "\x1B[33m" + d + "\x1B[39m";
 }
 
-// node_modules/unist-util-visit-parents/lib/index.js
+// ../../node_modules/.pnpm/unist-util-visit-parents@6.0.2/node_modules/unist-util-visit-parents/lib/index.js
 var empty = [];
 var CONTINUE = true;
 var EXIT = false;
@@ -184,7 +184,7 @@ function toResult(value) {
   return value === null || value === void 0 ? empty : [value];
 }
 
-// node_modules/mdast-util-find-and-replace/lib/index.js
+// ../../node_modules/.pnpm/mdast-util-find-and-replace@3.0.2/node_modules/mdast-util-find-and-replace/lib/index.js
 function findAndReplace(tree, list, options) {
   const settings = {};
   const ignored = convert(settings.ignore || []);
@@ -289,7 +289,7 @@ function toFunction(replace2) {
   };
 }
 
-// node_modules/mdast-util-newline-to-break/lib/index.js
+// ../../node_modules/.pnpm/mdast-util-newline-to-break@2.0.0/node_modules/mdast-util-newline-to-break/lib/index.js
 function newlineToBreak(tree) {
   findAndReplace(tree, [/\r?\n|\r/g, replace]);
 }
@@ -297,7 +297,7 @@ function replace() {
   return { type: "break" };
 }
 
-// node_modules/remark-breaks/lib/index.js
+// ../../node_modules/.pnpm/remark-breaks@4.0.0/node_modules/remark-breaks/lib/index.js
 function remarkBreaks() {
   return function(tree) {
     newlineToBreak(tree);
